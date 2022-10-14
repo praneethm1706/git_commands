@@ -1,0 +1,12 @@
+git checkout <filename> - To rollback to the preivous state of the file
+git status -  to check the status
+git diff - to check the difference in the file if it is not indexed (git add . is not done)
+git diff --cached - to check the difference in the file if it is indexed (git add . is done)
+git restore --staged <filename> - to rollback after the file is staged/indexed(git add . is done)
+git log --oneline - to check the logs in oneline
+git diff <previous_commit_id>..<current_commit_id> - to check the difference between two commits
+git revert HEAD - rollsback to the previous commit/state, but stores the history in the form of new commit.
+git revert <commit_ID> - rollsback to that commit and stores the history in the form of new commit
+git reset --hard <commit_ID> - rollsback to that commit and never stores the history after the mentioned commit
+
+git pull --rebase --ff-only upstream <branch_name> - to sync with the upstream branch for latest changes after making changes to your current branch.
